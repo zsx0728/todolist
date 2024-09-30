@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fonts/font/iconfont.css">
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+</head>
+
+<body>
+  <header>
+    <section>
+      <div id="header_title">
+        <label for="title">ToDoList</label>
+      </div>
+    </section>
+  </header>
+  <section>
+    <div class="example" action="/">
+      <input type="text" id="myInput" placeholder="搜索.." name="search2">
+      <button type="submit" onclick="searchFunction()"><i class="iconfont icon-search"></i></button>
+      <button id="add_button" class="btn-open">ADD</button>
+      <button type="submit" id="reset_button" class="btn-reset">RESET</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">编号</th>
+          <th scope="col">名称</th>
+          <th scope="col">编辑</th>
+          <th scope="col">删除</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-id">
+      </tbody>
+    </table>
+  </section>
+
+  <section class="modal hidden">
+    <div>
+      <div id="new_entry_title">
+        <h3>新增条目</h3>
+      </div>
+
+      <div class="input_row_serial_number">
+        <label>编号：</label>
+        <input type="number" id="serial_number" name="serial_number" placeholder="" />
+      </div>
+      <div class="input_row_content">
+        <label>内容：</label>
+        <input type="text" id="add_content" name="add_content" placeholder="" />
+      </div>
+      <div>
+        <button class="btn btn-save">Save</button>
+        <button class="btn btn-close">Cancel</button>
+      </div>
+
+    </div>
+  </section>
+  <div class="overlay hidden"></div>
+
+  <script src="js/localStorage.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
