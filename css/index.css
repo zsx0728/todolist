@@ -1,0 +1,106 @@
+section {
+  margin: 0 auto;
+}
+
+header {
+  height: 50px;
+  background-color: #2196F3;
+}
+
+header label {
+  float: left;
+  width: 100vw;
+  line-height: 50px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+}
+
+.example {
+  margin: 20px auto;
+  max-width: 660px;
+}
+
+.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  max-width: 350px;
+  background: #f1f1f1;
+}
+
+.example button {
+  float: left;
+  width: 70px;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.example #add_button {
+  margin: 0 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.example #reset_button {
+  font-size: 17px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.example button:hover {
+  background: #0b7dda;
+}
+
+.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.example .iconfont {
+  font-size: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin: auto;
+  width: 660px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  width: 25%;
+  text-align: center;
+}
+
+td:last-of-type {
+  text-align: center;
+}
